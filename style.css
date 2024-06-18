@@ -13,6 +13,7 @@ body{
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
     position: relative;
+    font-size: 16px;
 
 }
 
@@ -25,4 +26,99 @@ body{
     background-color: white;
     border-radius: 30px;
     overflow: hidden;
+}
+
+.text{
+    padding: 20pt;
+    text-align: center;
+}
+
+.order-summary{
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text p.subtitle{
+    color: grey;
+    margin-bottom: 20px;;
+}
+
+.annual-plan{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 20px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.left div{
+    margin-left: 20px;
+}
+
+.left h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.left p{
+    color: grey;
+    font-size: 12px;
+}
+
+.annual-plan a{
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    margin-left: auto;
+    padding-top: 3%;
+    
+}
+
+a.proceed-button {
+    display: block;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px 0;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a.proceed-button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+a.cancel-button{
+    background-color: white ;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 425px){
+    .container{
+        max-width: 80%
+    }
+    body{
+        background-image: url(/images/pattern-background-mobile.svg);
+        font-size: 12px;
+    }
+
+    .order-summary{
+        font-size: 20px;
+    }
+
+    div.annual-pan{
+        padding: 10px;
+    }
+
+    left div{
+        margin-left: 10px;
+    }
 }
